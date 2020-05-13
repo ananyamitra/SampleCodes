@@ -61,7 +61,7 @@ public class OAuthHandler {
 
     public String getToken() {
 
-        return getTokenfromAuthServer();
+        return "Bearer " + getTokenfromAuthServer();
 
     }
 }
