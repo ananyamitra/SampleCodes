@@ -15,7 +15,7 @@ public class OAuthHandler {
     private static final String tokenUrl = "Put Token URL here";
 
     private static String getTokenfromAuthServer() {
-        String content = "grant_type=client_credentials&client_id=" + clientId+"&scope=openid%20profile&Client%20Authentication=Send_as_Basic_Auth_header";
+        String content = "grant_type=client_credentials&client_id=" + clientId + "&scope=openid%20profile&Client%20Authentication=Send_as_Basic_Auth_header";
         BufferedReader reader = null;
         HttpsURLConnection connection = null;
         String returnValue = "";
