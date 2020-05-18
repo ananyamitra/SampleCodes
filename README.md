@@ -7,7 +7,7 @@ Step 2 - The client application uses the token in any subsequent request to the 
 
 
 OAUTH2 uses 'Scopes' to limit an application's access. An application can request one or more scopes, and the access token issued to the application will be limited to the scopes granted.  
-We noticed in the example codes that we need to use the 'Openid Profile' scope to get the correct token. Basically this was the reason why initially we were getting the wrong scope (Cause we were not passing any scope value and I believe that the authorization server was using some kind of a default scope/)
+We noticed in the example codes that we need to use the 'Openid Profile' scope to get the correct token. Basically this was the reason why initially we were getting the wrong token (Cause we were not passing any scope value and I believe that the authorization server was using some kind of a default scope)
 
 Also, in our specific case, we have TLS enabled and hence the client does not need to identify itself using a secret, but it can use a certificate (the public keys of which has already been imported to the server's truststore).  
 
